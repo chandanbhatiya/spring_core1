@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean class="com.chandan.ci.Cetificate" name="ce">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg value="java"></constructor-arg>
+</bean>
+
+<bean class="com.chandan.ci.Student" name="st">
+
+<constructor-arg value="1" type="int" >
+</constructor-arg>
+<constructor-arg value="chandan" ></constructor-arg>
+<constructor-arg value="India"></constructor-arg>
+<constructor-arg >
+<list>
+<value>java</value>
+<value>python</value>
+<value>.net</value>
+</list>
+</constructor-arg>
+
+<constructor-arg ref="ce" />
+
+
+
+</bean>
+
+
+</beans>

@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="st1" class="com.chandan.collection.Student">
+
+<property name="name" value="chandan"></property>
+<property name="address">
+<list>
+<value>Guraru</value>
+<value>Gaya</value>
+<value>Bihar</value>
+<value>India</value>
+</list>
+</property>
+
+<property name="phone">
+<set>
+<value>9507739156</value>
+<value>7499945775</value>
+<value>7488457825</value>
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="java" value="2 month doration"></entry>
+<entry key="adv java" value="3 month doration"></entry>
+<entry key="full stack java developer" value="6 manth doration"></entry>
+</map>
+</property>
+
+</bean>
+
+
+</beans>

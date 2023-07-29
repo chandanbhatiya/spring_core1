@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean name="ad" class="com.chandan.refrence.Address">
+
+<property name="id" value="101"></property>
+<property name="city" value="Gaya"></property>
+</bean>
+
+<bean name="st" class="com.chandan.refrence.Student">
+<property name="name" value="chandan"></property>
+
+<property name="address" >
+<ref bean="ad"/>
+</property>
+</bean>
+
+
+</beans>
